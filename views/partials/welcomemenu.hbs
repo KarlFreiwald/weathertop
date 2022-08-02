@@ -1,0 +1,33 @@
+<header>
+    <p></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="/">Weathertop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="btn btn-primary" type="button">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" id="signup" href="/signup">Registrieren</a>
+                        </li>
+                    </ul>
+            </button>
+
+        </div>
+    </nav>
+</header>
+<p></p>
+
+{{#if message}}
+    <div class="alert alert-{{#if message_type}}{{message_type}}{{else}}warning{{/if}}">
+         {{message}}
+    </div>
+{{/if}}
+
+<script>
+    $("#{{id}}").addClass("active");
+</script>

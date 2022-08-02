@@ -1,0 +1,22 @@
+{{> welcomemenu }}
+
+<div>
+    <div class="row">
+        <div class="col">
+            <img src="imgs/weathers.png" style="width: 100%"/>
+        </div>
+        <div class="col">
+            <form action="/authenticate" method="POST">
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Passwort</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Passwort">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

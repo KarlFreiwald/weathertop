@@ -1,0 +1,33 @@
+<form action="/measurements/{{s_id}}/addmeasurement" method="post">
+    <div class="row">
+        <div class="col mb-2">
+            <label for="validationDefault03">Code</label>
+            <input type="text" class="form-control" id="validationDefault03" name="weather" placeholder="200 bis 804" required>
+        </div>
+        <div class="col mb-2">
+            <label for="validationDefault04">Temperatur</label>
+            <input type="text" class="form-control" id="validationDefault04" name="temperature" placeholder="in °C" required>
+        </div>
+        <div class="col mb-2">
+            <label for="validationDefault04">Windgeschwindigkeit</label>
+            <input type="text" class="form-control" id="validationDefault04" name="wind" placeholder="Windgeschwindigkeit" required>
+        </div>
+        <div class="col mb-2">
+            <label for="validationDefault04">Windrichtung</label>
+            <input type="text" class="form-control" id="validationDefault04" name="wind_direction" placeholder="0 - 360" required>
+        </div>
+        <div class="col mb-2">
+            <label for="validationDefault04">Luftdruck</label>
+            <input type="text" class="form-control" id="validationDefault04"  name="airpressure" placeholder="Luftdruck" required>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Messung hinzufügen</button>
+</form>
+
+<p></p>
+
+<form action="/measurements/{{s_id}}/addautomaticmeasurement", method="post">
+    <input type="hidden" name="latitude" value="">
+    <input type="hidden" name="longitude" value="">
+    <button class="btn btn-warning" type="submit">Automatisch erzeugte Messung hinzufügen</button>
+</form>

@@ -1,0 +1,19 @@
+<form action="/dashboard/addstation" method="post">
+    <div class="row">
+        <div class="col mb-2">
+            <label for="validationDefault04">Neue Wetterstation</label>
+            <input type="text" class="form-control" id="validationDefault04" name="location" placeholder="Ort" required>
+        </div>
+        <div class="col mb-2">
+            <label for="validationDefault04">Breitengrad</label>
+            <input type="text" class="form-control" id="validationDefault04" name="latitude" placeholder="-90° bis 90°" required>
+        </div>
+        <div class="col mb-2">
+            <label for="validationDefault04">Längengrad</label>
+            <input type="text" class="form-control" id="validationDefault04" name="longitude" placeholder="-180° bis 180°" required>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Station hinzufügen</button>
+</form>
+
